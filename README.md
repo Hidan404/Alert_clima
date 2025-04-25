@@ -40,3 +40,46 @@ AlertaClima5D/
 ├── enviar_msg_telegram.py # Integração com Telegram
 ├── requirements.txt       # Dependências do projeto
 └── dados_clima.json       # Dados meteorológicos persistidos
+
+## ▶️ Como executar
+
+1. **Clone o repositório**
+  ```bash
+  git clone https://github.com/seuusuario/AlertaClima5D.git
+  cd AlertaClima5D
+  ```
+
+2. **Crie um ambiente virtual e ative**
+  ```bash
+  python -m venv venv
+  source venv/bin/activate  # Linux ou Mac
+  venv\Scripts\activate     # Windows
+  ```
+
+3. **Instale as dependências**
+  ```bash
+  pip install -r requirements.txt
+  ```
+  > **Nota:** Caso o arquivo `requirements.txt` ainda não exista, crie-o e adicione:
+  > ```
+  > requests
+  > ```
+
+4. **Configure o Bot do Telegram**
+  - No arquivo `enviar_msg_telegram.py`, atualize as seguintes linhas:
+    ```python
+    self.token = "SEU_TOKEN_AQUI"
+    self.chat_id = "SEU_CHAT_ID_AQUI"
+    ```
+  - Certifique-se de que o seu bot no Telegram esteja ativo (já tenha enviado uma mensagem para ele).
+
+5. **Execute o aplicativo**
+  ```bash
+  python app.py
+  ```
+
+## ⚙️ Requisitos
+
+- **Sistema Operacional:** Linux ou WSL (requer `notify-send` instalado para notificações gráficas)
+- **Conta no Telegram:** Com um Bot configurado via [@BotFather](https://core.telegram.org/bots#botfather)
+- **API Key da OpenWeather:** Crie sua chave [aqui](https://openweathermap.org/api)

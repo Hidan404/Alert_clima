@@ -3,7 +3,7 @@ from dados import dados_api
 
 class salvar_json():
     def __init__(self):
-        self.local_arquivo_json = "Alerta_chuva/dados.json"
+        self.local_arquivo_json = "/home/hidan/Documentos/GitHub/Alert_clima/dados.json"
         self.api = dados_api()
 
 
