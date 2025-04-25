@@ -33,13 +33,16 @@ Aplicativo Python que fornece alertas meteorológicos inteligentes com integraç
 
 ```bash
 AlertaClima5D/
-├── app.py                 # Ponto de entrada principal
-├── dados.py               # Lógica de coleta de dados da API
-├── salvar_dados_json.py   # Persistência de dados local
-├── icones_descricao.py    # Mapeamento de condições climáticas para emojis
-├── enviar_msg_telegram.py # Integração com Telegram
-├── requirements.txt       # Dependências do projeto
-└── dados_clima.json       # Dados meteorológicos persistidos
+├── app.py
+├── dados.py
+├── salvar_dados_json.py
+├── icones_descricao.py
+├── enviar_msg_telegram.py
+├── README.md
+├── LICENSE
+├── requirements.txt
+
+
 
 ## ▶️ Como executar
 
