@@ -1,9 +1,10 @@
 import json
 from dados import dados_api
+import os
 
 class salvar_json():
     def __init__(self):
-        self.local_arquivo_json = "/home/hidan/Documentos/GitHub/Alert_clima/dados.json"
+        self.local_arquivo_json = os.getenv("caminho_arquivo_json")
         self.api = dados_api()
 
 
