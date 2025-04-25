@@ -4,7 +4,7 @@ import os
 
 class salvar_json():
     def __init__(self):
-        self.local_arquivo_json = os.getenv("caminho_arquivo_json")
+        self.local_arquivo_json = os.getenv("caminho_json")
         self.api = dados_api()
 
 
