@@ -3,6 +3,9 @@ import datetime
 from icones_descricao import Icone
 from enviar_msg_telegram import msg_telegram
 import os
+import requests
+
+
 
 
 def main():
