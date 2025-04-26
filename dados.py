@@ -6,7 +6,7 @@ class dados_api:
         self.linguagem = "pt_br"
         self.pais = "BR"
         self.link = "https://api.openweathermap.org/data/2.5/forecast"
-        self.chave_api = os.getenv("key_api_clima")
+        self.chave_api = os.getenv("OPENWEATHER_KEY")
         # Se caso a cidade não for passada é usada uma automática lembretepara mim não esquecer
         self.cidade = cidade or self.obter_cidade_automatica()
 

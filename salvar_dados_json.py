@@ -4,7 +4,7 @@ import os
 
 class salvar_json():
     def __init__(self,cidade = None):
-        self.local_arquivo_json = os.getenv("caminho_json")
+        self.local_arquivo_json = "Alert_clima/dados.json"
         self.api = dados_api(cidade)
 
 
