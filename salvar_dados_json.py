@@ -4,14 +4,14 @@ import os
 
 class salvar_json():
     def __init__(self,cidade = None):
-        self.local_arquivo_json = "Alert_clima/dados.json"
+        self.local_arquivo_json = "/home/hidan/Documentos/GitHub/Alert_clima/dados.json"
         self.api = dados_api(cidade)
 
 
 
     def salvar_arquivo_json(self):
         dados = self.api.obter_dados()
-        
+        print(dados)
         with open(self.local_arquivo_json, "w") as arquivo:
             json.dump(dados, arquivo, ensure_ascii=False, indent= 4)
 
@@ -28,6 +28,5 @@ class salvar_json():
         except Exception as e:
             print(f"Erro ao abrir o arquivo: {e}")
             return None
-
 
 

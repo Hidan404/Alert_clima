@@ -43,7 +43,7 @@ def main():
             descricao = item["weather"][0]["description"].capitalize()
             icone = Icone(descricao)
             chuva = item.get("pop", 0) * 100
-
+            print()
             print(f"🕒 {data_hora}")
             print(f"  {icone.emoji_clima()} {descricao}")
             print(f"  🌡️ Temp: {item['main']['temp']}°C")
