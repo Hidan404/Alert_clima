@@ -9,7 +9,15 @@ import requests
 
 
 def main():
-    dados = salvar_json()
+    
+    escolha = input("Deseja digitar a cidade manualmente? (s/n): ").strip().lower()
+
+    if escolha == "s":
+        cidade = input("Digite o nome da cidade: ").strip()
+        dados = salvar_json(cidade)  #
+    else:
+        dados = salvar_json() 
+
     dados.salvar_arquivo_json()
     dados_json = dados.abrir_arquivo_json()
 
