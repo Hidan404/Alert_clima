@@ -4,8 +4,8 @@ import os
 
 class msg_telegram():
     def __init__(self):
-        self.TOKEN = "7949436359:AAGMZkjSqdQFTzXbYH--WJP1YrZVFMyvs90"
-        self.CHAT_ID = "1364356086"
+        self.TOKEN = os.getenv("TOKEN_API_TELEGRAM")
+        self.CHAT_ID = os.getenv("CHAT_ID")
         self.URL = f"https://api.telegram.org/bot{self.TOKEN}/sendMessage"
 
     def enviar_mensagem_telegram(self, mensagem):
