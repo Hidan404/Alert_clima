@@ -7,8 +7,7 @@ class dados_api:
         self.pais = "BR"
         self.link = "https://api.openweathermap.org/data/2.5/forecast"
         self.chave_api = os.getenv("key_api_clima")
-
-        # Se a cidade não for passada, usa automática
+        # Se caso a cidade não for passada é usada uma automática
         self.cidade = cidade or self.obter_cidade_automatica()
 
     def obter_cidade_automatica(self):
