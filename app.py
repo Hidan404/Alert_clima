@@ -58,7 +58,7 @@ def main():
     os.system(f'notify-send "Clima Amanhã - {cidade_nome}" "{resumo_notificacao}"')
     
     msg_env_telegram = msg_telegram()
-    print(msg_env_telegram.enviar_mensagem_telegram(resumo_notificacao))
+    msg_env_telegram.enviar_mensagem_telegram(resumo_notificacao)
 
 if __name__ == "__main__":
     main()  
