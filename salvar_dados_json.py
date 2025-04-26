@@ -3,9 +3,9 @@ from dados import dados_api
 import os
 
 class salvar_json():
-    def __init__(self):
+    def __init__(self,cidade = None):
         self.local_arquivo_json = os.getenv("caminho_json")
-        self.api = dados_api()
+        self.api = dados_api(cidade)
 
 
 

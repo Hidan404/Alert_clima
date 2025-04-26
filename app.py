@@ -3,7 +3,7 @@ import datetime
 from icones_descricao import Icone
 from enviar_msg_telegram import msg_telegram
 import os
-import requests
+
 
 
 
@@ -14,7 +14,7 @@ def main():
 
     if escolha == "s":
         cidade = input("Digite o nome da cidade: ").strip()
-        dados = salvar_json(cidade)  #
+        dados = salvar_json(cidade)  
     else:
         dados = salvar_json() 
 
