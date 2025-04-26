@@ -1,11 +1,12 @@
 import requests
+import os
 
 class dados_api:
     def __init__(self, cidade=None):
         self.linguagem = "pt_br"
         self.pais = "BR"
         self.link = "https://api.openweathermap.org/data/2.5/forecast"
-        self.chave_api = "5efdf341fa6100bd24e45542c7551efb"
+        self.chave_api = os.getenv("key_api_clima")
 
         # Se a cidade não for passada, usa automática
         self.cidade = cidade or self.obter_cidade_automatica()
