@@ -11,7 +11,7 @@ class salvar_json():
 
     def salvar_arquivo_json(self):
         dados = self.api.obter_dados()
-        print(dados)
+        
         with open(self.local_arquivo_json, "w") as arquivo:
             json.dump(dados, arquivo, ensure_ascii=False, indent= 4)
 
